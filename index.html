@@ -13,27 +13,91 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <div class="main-container">
 
-  Login
-  Register
+    <div class="navigation-container">
+
+      <div class="logo">snap</div>
+
+      <div class="nav-menu">
+
+        <ul>
+         <li class="nav-item">
+
+          <div class="drop-btn">
+            <a href="">Features</a>
+            <img src="./images/icon-arrow-down.svg" alt="arrow-down">
+          </div>
+
+          <ul class="drop-content drop-features">
+
+            <li> <img src="./images/icon-todo.svg" alt=""> <a href="">Todo list</a></li>
+            <li> <img src="./images/icon-calendar.svg" alt=""> <a href="">Calendar</a></li>
+            <li> <img src="./images/icon-reminders.svg" alt=""> <a href="">Reminders</a></li>
+            <li> <img src="./images/icon-planning.svg" alt=""> <a href="">Planning</a></li>
+
+          </ul>
+
+        </li>
+         <li class="nav-item">
+          
+          <div class="drop-btn">
+            <a href="">Company</a>
+            <img src="./images/icon-arrow-down.svg" alt="arrow-down"> 
+          </div>
+
+          <ul class="drop-content drop-company">
+
+            <li><a href="">History</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Blog</a></li>
+
+          </ul>
+          
+        
+        </li>
+         <li class="nav-item"><a href="">Careers</a></li>
+         <li class="nav-item"><a href="">About</a></li>
+        </ul>
+
+      </div>
+
+      <div class="user-nav">
+        <ul>
+          <li><a href="">Login</a></li>
+          <li><a href="">Register</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div class="info-content"></div>
+
+      <div class="img-content"></div>
+
+    </div>
+
+  </div>
+
+  <!--
 
   Make remote work
 
   Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.
 
-  Learn more
+  Learn more -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

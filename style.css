@@ -17,6 +17,8 @@
 }
 
 
+/*HEADER*/
+
 /* navigation */
 .navigation-container {
     background: transparent;
@@ -28,11 +30,11 @@
 
 }
 
-ul li {
+.navigation-container ul li {
     list-style: none;
 }
 
-a {
+.navigation-container a {
     font-size: 12px;
     font-weight: 500;
     opacity: 0.6;
@@ -40,7 +42,15 @@ a {
     color: #000;
 }
 
-/*HEADER*/
+.navigation-container a:hover {
+    opacity: 1;
+}
+
+.navigation-container img:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #000;
+}
 
 /*logo*/
 
@@ -51,6 +61,10 @@ a {
     text-transform: lowercase;
     margin: 0 20px;
 
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 /*main navigation*/
@@ -76,12 +90,18 @@ a {
 }
 
 .drop-features {
+    display: none;
     width: 120px;
     left: -80%;
 }
 
+.drop-features div {
+    width: 20px;
+}
+
 .drop-company {
 
+    display: none;
     width: 100px;
     left: 0;
 }
@@ -102,6 +122,17 @@ a {
     margin: 0 20px 0 auto;
     
     
+}
+
+/*event classes*/
+
+.active {
+    display: block;
+}
+
+.focus {
+    color: #000 !important;
+     opacity: 1 !important;
 }
 
 /* user nav */

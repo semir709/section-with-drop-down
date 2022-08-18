@@ -132,7 +132,7 @@
 
 .focus {
     color: #000 !important;
-     opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 /* user nav */
@@ -143,9 +143,14 @@
 }
 
 .user-nav li:last-child {
-    border: 1px solid black;
+    border: 1px solid #656565;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+
+.user-nav li:last-child:hover {
+    border: 1px solid #000;
+    cursor: pointer;
 }
 
 /* CONTENT */

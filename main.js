@@ -12,9 +12,18 @@ drop_f_btn.addEventListener('click', (e) => {
 
     drop_f.classList.toggle('active');
 
-    img_f.src = './images/icon-arrow-up.svg';// it is not done
+    if(drop_f.classList.contains('active')) {
+        img_f.src = './images/icon-arrow-up.svg';
+    } else {
+        img_f.src = './images/icon-arrow-down.svg';
+    }
 
-    e.target.parentElement.children[0].classList.toggle('focus'); //some issue here
+    //Check if select the wrong element 
+    if(e.target.classList.contains('drop-btn')) {
+        e.target.children[0].classList.toggle('focus');
+    } else {
+        e.target.parentElement.children[0].classList.toggle('focus');
+    }
 
 });
 
@@ -22,8 +31,37 @@ drop_c_btn.addEventListener('click', (e) => {
 
     drop_c.classList.toggle('active');
 
-    img_c.src = './images/icon-arrow-up.svg'; // it is not done
+    if(drop_c.classList.contains('active')) {
+        img_c.src = './images/icon-arrow-up.svg';
+    } else {
+        img_c.src = './images/icon-arrow-down.svg';
+    }
 
-    e.target.parentElement.children[0].classList.toggle('focus'); //some issue here
+
+    //Check if select the wrong element
+    if(e.target.classList.contains('drop-btn')) {
+        e.target.children[0].classList.toggle('focus');
+    } else {
+        e.target.parentElement.children[0].classList.toggle('focus');
+    }
+
+    
+
+});
+
+
+// Registration button hover event
+const regButton = document.querySelector('.user-nav');
+const reg_aTag = regButton.children[0].children[1];
+
+reg_aTag.addEventListener('mouseover', () => {
+
+    regButton.children[0].children[1].children[0].classList.add('focus');
+
+});
+
+reg_aTag.addEventListener('mouseout', () => {
+
+    regButton.children[0].children[1].children[0].classList.remove('focus');
 
 });

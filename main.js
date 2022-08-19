@@ -65,3 +65,19 @@ reg_aTag.addEventListener('mouseout', () => {
     regButton.children[0].children[1].children[0].classList.remove('focus');
 
 });
+
+const ham_btn_close = document.querySelector('#hamburger-close');
+const ham_btn = document.querySelector('#hamburger-menu');
+const nav_container = document.querySelector('#navigation-container');
+
+ham_btn_close.addEventListener('click', (e) => {
+
+    nav_container.classList.remove('open');
+
+});
+
+ham_btn.addEventListener('click', (e) => {
+
+    nav_container.classList.add('open');
+
+});

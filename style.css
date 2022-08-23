@@ -65,7 +65,7 @@ body {
 }
 
 .navigation-container a {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 500;
     opacity: 0.6;
     text-decoration: none;
@@ -121,7 +121,7 @@ body {
 
 .drop-features {
     display: none;
-    width: 120px;
+    width: 145px;
     left: -80%;
 }
 
@@ -132,7 +132,7 @@ body {
 .drop-company {
 
     display: none;
-    width: 100px;
+    width: 120px;
     left: 0;
 }
 
@@ -228,16 +228,16 @@ body {
 }
 
 .info-content p {
-   font-size: 14px;
+   font-size: 1em;
    opacity: 0.6;
    width: 340px;
-   line-height: 20px;
+   line-height: 25px;
    margin-bottom: 20px;
 }
 
 .info-content button {
 
-    padding: 10px 20px;
+    padding: 15px 30px;
     background: #000;
     color: #fff;
     border-radius:10px;

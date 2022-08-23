@@ -70,14 +70,24 @@ const ham_btn_close = document.querySelector('#hamburger-close');
 const ham_btn = document.querySelector('#hamburger-menu');
 const nav_container = document.querySelector('#navigation-container');
 
+const dark_filter = document.querySelector('#dark-filter');
+
+
 ham_btn_close.addEventListener('click', (e) => {
 
     nav_container.classList.remove('open');
+    dark_filter.style.display = 'none';
+
+    document.body.style.overflow = 'visible';
+    
 
 });
 
 ham_btn.addEventListener('click', (e) => {
 
     nav_container.classList.add('open');
+    dark_filter.style.display = 'block';
+
+    document.body.style.overflow = 'hidden'; // not allowing scrolling while navigation is opened 
 
 });
